@@ -1,0 +1,70 @@
+/* 全局樣式 */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%; /* 確保頁面高度占滿視窗 */
+    font-family: Arial, sans-serif;
+    background-color: #1c1c1c; /* 頁面背景為深灰色 */
+}
+
+/* 導航欄樣式 */
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Hero Section 圖片樣式 */
+.hero-container {
+    background-image: url('/static/BIO.jpg'); /* 替換為你的背景圖片 */
+    background-size: cover; /* 確保圖片完全覆蓋容器 */
+    background-position: center; /* 圖片居中 */
+    background-repeat: no-repeat; /* 禁止圖片重複 */
+    width: 100%; /* 寬度與頁面對齊 */
+    height: 70vh; /* 高度為視窗的 70% */
+    position: relative; /* 為內容定位提供基準 */
+    filter: grayscale(100%); /* 黑白效果 */
+    flex: 1; /* 將 Hero 區域設置為可擴展區域 */
+}
+
+/* Hero Content 文字區域樣式 */
+.hero-content {
+    position: absolute; /* 絕對定位 */
+    bottom: 0; /* 貼近圖片底部 */
+    width: 100%; /* 寬度與圖片一致 */
+    text-align: center; /* 文字水平居中 */
+    color: #fff; /* 白色文字 */
+    padding: 10px 0; /* 添加內部間距 */
+    background: rgba(0, 0, 0, 0.6); /* 半透明黑色背景 */
+    font-size: 1.2rem; /* 文字大小 */
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8); /* 增加文字陰影效果 */
+}
+
+/* 項目區域 */
+#projects {
+    padding-top: 3rem; /* 保持上方距離 */
+    padding-bottom: 1rem; /* 縮小下方距離 */
+}
+
+/* 卡片樣式 */
+.card-img {
+    object-fit: contain; 
+    max-width: 100%;
+    aspect-ratio: 10/10;  
+    height: auto; 
+    display: block; 
+}
+
+.card-body {
+    padding: 1rem 1.5rem;
+    background-color: #121212;
+}
+
+/* Sticky Footer */
+footer {
+    background-color: #000; /* 黑色背景 */
+    color: #fff; /* 白色文字 */
+    padding: 10px 0; /* 上下內距 */
+    text-align: center; /* 文字居中 */
+    font-size: 0.9rem; /* 文字大小 */
+}

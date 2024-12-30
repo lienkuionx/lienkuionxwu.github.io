@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lienkuionx Wu</title>
+    <!-- 引入 Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- 引入自定義樣式 -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body class="bg-dark text-white">
+    <!-- 頁面導航 -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+        <div class="container">
+            <a class="navbar-brand" href="#">LIENKUIONX WU</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/">CREDITS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/BIO">BIO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contact">CONTACT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/playlist">PLAYLIST</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero 區域 -->
+    <div class="hero-section text-center py-5">
+        <div class="container">
+            <h1 class="display-3 fw-bold">Music produce</h1>
+        </div>
+    </div>
+
+    <!-- Projects 區域 -->
+    <div id="projects" class="container py-3">
+        <div class="row g-4">
+            <!-- Project 1 -->
+            <div class="col-md-6">
+                <div class="card bg-black text-white border-0">
+                    <img src="{{ url_for('static', filename='離.png') }}" class="card-img" alt="離">
+                    <div class="card-body">
+                        <h5 class="card-title">爛漫會社</h5>
+                        <p class="card-text">"離" - Producer＆Ｍixer</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Project 2 -->
+            <div class="col-md-6">
+                <div class="card bg-black text-white border-0">
+                    <img src="{{ url_for('static', filename='project2.png') }}" class="card-img" alt="不再值得你的淚">
+                    <div class="card-body">
+                        <h5 class="card-title">Echoes Of Epic Hour</h5>
+                        <p class="card-text">"不再值得你的淚" - Recording</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--PODCAST 專區-->
+    <!-- Hero 區域 -->
+    <div class="hero-section text-center py-5">
+        <div class="container">
+            <h1 class="display-3 fw-bold">Podcast produce</h1>
+        </div>
+    </div>
+<!-- Projects 區域 -->
+<div id="projects" class="container py-3">
+    <div class="row g-4">
+        <!-- Project 1 -->
+        <div class="col-md-6">
+            <div class="card bg-black text-white border-0">
+                <img src="{{ url_for('static', filename='我們沒用.png') }}" class="card-img" alt="離">
+                <div class="card-body">
+                    <h5 class="card-title">我們沒用</h5>
+                    <p class="card-text">Producer＆Ｍixer</p>
+                </div>
+            </div>
+        </div>
+        <!-- Project 2 -->
+        <div class="col-md-6">
+            <div class="card bg-black text-white border-0">
+                <img src="{{ url_for('static', filename='仙姑行不行.png') }}" class="card-img" alt="不再值得你的淚">
+                <div class="card-body">
+                    <h5 class="card-title">仙姑行不行</h5>
+                    <p class="card-text">Editor</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!-- Footer -->
+    <footer id="contact" class="text-center py-3 bg-black text-white">
+        <p>&copy; 2024 My Portfolio. All rights reserved.</p>
+    </footer>
+
+    <!-- 引入 Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
